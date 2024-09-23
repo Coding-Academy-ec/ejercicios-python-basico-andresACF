@@ -3,9 +3,9 @@ from io import StringIO
 import sys
 
 def test_imprimir_datos_personales(capsys):
-    nombre = "Tu nombre"
-    edad = 30
-    estatura = 1.75
+    nombre = "Andrés Cornejo"
+    edad = 21
+    estatura = 1.70
     imprimir_datos_personales(nombre, edad, estatura)
     captured = capsys.readouterr()
-    assert captured.out == "Nombre: Tu nombre\nEdad: 30\nEstatura: 1.75\n"
+    assert captured.out == "Nombre: Andrés Cornejo\nEdad: 21\nEstatura: 1.70\n"
